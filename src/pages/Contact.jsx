@@ -5,7 +5,7 @@ export default function Contact() {
   const globalLocations = ["Dubai", "Canada"];
 
   return (
-    <div className="relative w-full min-h-screen font-sans selection:bg-[#5a67d8]/30 selection:text-[#1d1d1f] pb-20">
+    <div className="relative w-full min-h-screen font-sans selection:bg-[#7e22ce]/30 selection:text-[#1d1d1f] pb-20">
       
       {/* ================= BACKGROUND GLOW (Consistent Theme) ================= */}
       <div className="fixed inset-0 z-0 bg-[#f4f8fb] pointer-events-none overflow-hidden">
@@ -30,12 +30,14 @@ export default function Contact() {
 
         {/* --- PRESENCE & LOCATIONS HERO --- */}
         <section className="w-full max-w-[1200px] mx-auto px-4 md:px-8 text-center relative">
-          <span className="inline-block py-1.5 px-4 rounded-md bg-white/60 backdrop-blur-md border border-white text-[#5a67d8] text-[10px] font-black tracking-[0.3em] uppercase mb-6 shadow-sm">
+          {/* CHANGED TEXT COLOR TO MATCH THEME */}
+          <span className="inline-block py-1.5 px-4 rounded-md bg-white/60 backdrop-blur-md border border-white text-[#7e22ce] text-[10px] font-black tracking-[0.3em] uppercase mb-6 shadow-sm">
             Our Global Footprint
           </span>
           <h1 className="text-5xl md:text-7xl font-black text-[#1a1a2e] leading-[1.1] tracking-tight mb-6">
             Growing Brands <br className="hidden md:block"/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5a67d8] to-[#8a2387]">Across Borders.</span>
+            {/* CHANGED TEXT GRADIENT HERE */}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4338ca] via-[#7e22ce] to-[#be185d]">Across Borders.</span>
           </h1>
           <p className="text-lg md:text-xl text-slate-600 font-medium max-w-2xl mx-auto leading-relaxed">
             From local businesses to international collaborations, our work travels.
@@ -44,10 +46,11 @@ export default function Contact() {
           {/* The Emotional Quote (Glassmorphic) */}
           <div className="mt-16 mb-20 relative w-full max-w-4xl mx-auto">
             <div className="absolute inset-0 flex items-center justify-center -z-10">
-              <h2 className="text-[8rem] md:text-[12rem] font-black text-[#5a67d8]/5 leading-none select-none">VNR</h2>
+              <h2 className="text-[8rem] md:text-[12rem] font-black text-[#7e22ce]/5 leading-none select-none">VNR</h2>
             </div>
             <div className="bg-white/40 backdrop-blur-xl border border-white/80 p-6 md:p-10 rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.03)] inline-block">
-              <p className="text-2xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#5a67d8] to-[#8a2387] italic">
+              {/* CHANGED TEXT GRADIENT HERE */}
+              <p className="text-2xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#4338ca] via-[#7e22ce] to-[#be185d] italic">
                 "Because great ideas have no boundaries."
               </p>
             </div>
@@ -93,7 +96,7 @@ export default function Contact() {
 
         {/* --- CONTACT FORM & INFO SECTION (Glassmorphic UI) --- */}
         <section className="w-full max-w-[1200px] mx-auto px-4 md:px-8">
-          <div className="bg-white/50 backdrop-blur-2xl rounded-[2rem] shadow-[0_8px_32px_rgba(0,0,0,0.04)] border border-white overflow-hidden flex flex-col lg:flex-row">
+          <div className="bg-white/50 backdrop-blur-2xl rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.04)] border border-white overflow-hidden flex flex-col lg:flex-row">
             
             {/* Left Side: Contact Form */}
             <div className="w-full lg:w-3/5 p-8 md:p-12 relative z-10">
@@ -104,22 +107,22 @@ export default function Contact() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="text-xs font-black text-slate-700 uppercase tracking-widest">Full Name</label>
-                    <input type="text" placeholder="John Doe" className="w-full bg-white/80 border border-white text-slate-800 px-5 py-3.5 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#5a67d8] transition-all placeholder:text-slate-400 font-medium" />
+                    <input type="text" placeholder="John Doe" className="w-full bg-white/80 border border-white text-slate-800 px-5 py-3.5 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#7e22ce] transition-all placeholder:text-slate-400 font-medium" />
                   </div>
                   <div className="space-y-2">
                     <label className="text-xs font-black text-slate-700 uppercase tracking-widest">Email Address</label>
-                    <input type="email" placeholder="john@company.com" className="w-full bg-white/80 border border-white text-slate-800 px-5 py-3.5 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#5a67d8] transition-all placeholder:text-slate-400 font-medium" />
+                    <input type="email" placeholder="john@company.com" className="w-full bg-white/80 border border-white text-slate-800 px-5 py-3.5 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#7e22ce] transition-all placeholder:text-slate-400 font-medium" />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="text-xs font-black text-slate-700 uppercase tracking-widest">Phone Number</label>
-                    <input type="tel" placeholder="+91 98765 43210" className="w-full bg-white/80 border border-white text-slate-800 px-5 py-3.5 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#5a67d8] transition-all placeholder:text-slate-400 font-medium" />
+                    <input type="tel" placeholder="+91 98765 43210" className="w-full bg-white/80 border border-white text-slate-800 px-5 py-3.5 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#7e22ce] transition-all placeholder:text-slate-400 font-medium" />
                   </div>
                   <div className="space-y-2">
                     <label className="text-xs font-black text-slate-700 uppercase tracking-widest">Service</label>
-                    <select className="w-full bg-white/80 border border-white text-slate-800 px-5 py-3.5 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#5a67d8] transition-all appearance-none font-medium">
+                    <select className="w-full bg-white/80 border border-white text-slate-800 px-5 py-3.5 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#7e22ce] transition-all appearance-none font-medium">
                       <option>Digital Strategy</option>
                       <option>Performance Ads</option>
                       <option>Social Media</option>
@@ -131,17 +134,19 @@ export default function Contact() {
 
                 <div className="space-y-2">
                   <label className="text-xs font-black text-slate-700 uppercase tracking-widest">Your Message</label>
-                  <textarea rows="4" placeholder="Tell us about your brand and goals..." className="w-full bg-white/80 border border-white text-slate-800 px-5 py-3.5 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#5a67d8] transition-all resize-none placeholder:text-slate-400 font-medium"></textarea>
+                  <textarea rows="4" placeholder="Tell us about your brand and goals..." className="w-full bg-white/80 border border-white text-slate-800 px-5 py-3.5 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#7e22ce] transition-all resize-none placeholder:text-slate-400 font-medium"></textarea>
                 </div>
 
-                <button type="button" className="w-full py-4 rounded-md bg-gradient-to-r from-[#5a67d8] to-[#8a2387] text-white font-bold text-lg shadow-[0_10px_20px_rgba(90,103,216,0.3)] hover:shadow-[0_15px_30px_rgba(90,103,216,0.4)] hover:-translate-y-0.5 transition-all duration-300">
+                {/* CHANGED BUTTON GRADIENT HERE */}
+                <button type="button" className="w-full py-4 rounded-md bg-gradient-to-r from-[#4338ca] via-[#7e22ce] to-[#be185d] text-white font-bold text-lg shadow-[0_8px_20px_rgba(126,34,206,0.3)] hover:shadow-[0_12px_25px_rgba(126,34,206,0.4)] hover:-translate-y-0.5 transition-all duration-300">
                   Send Message
                 </button>
               </form>
             </div>
 
             {/* Right Side: Contact Info Cards */}
-            <div className="w-full lg:w-2/5 bg-gradient-to-br from-[#5a67d8] to-[#8a2387] p-8 md:p-12 text-white relative overflow-hidden flex flex-col justify-center">
+            {/* CHANGED BACKGROUND GRADIENT TO MATCH THE THEME */}
+            <div className="w-full lg:w-2/5 bg-gradient-to-br from-[#4338ca] to-[#be185d] p-8 md:p-12 text-white relative overflow-hidden flex flex-col justify-center">
               <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 mix-blend-overlay"></div>
               
               <h3 className="text-3xl font-black mb-10 relative z-10 drop-shadow-sm">Reach Out Directly</h3>
@@ -149,7 +154,7 @@ export default function Contact() {
               <div className="space-y-8 relative z-10">
                 {/* Phone Card */}
                 <div className="flex items-start gap-5 group cursor-pointer">
-                  <div className="w-12 h-12 bg-white/10 backdrop-blur-md border border-white/20 rounded-md flex items-center justify-center flex-shrink-0 group-hover:bg-white group-hover:text-[#5a67d8] transition-colors shadow-sm">
+                  <div className="w-12 h-12 bg-white/10 backdrop-blur-md border border-white/20 rounded-md flex items-center justify-center flex-shrink-0 group-hover:bg-white group-hover:text-[#4338ca] transition-colors shadow-sm">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                   </div>
                   <div>
@@ -160,7 +165,7 @@ export default function Contact() {
 
                 {/* Email Card */}
                 <div className="flex items-start gap-5 group cursor-pointer">
-                  <div className="w-12 h-12 bg-white/10 backdrop-blur-md border border-white/20 rounded-md flex items-center justify-center flex-shrink-0 group-hover:bg-white group-hover:text-[#8a2387] transition-colors shadow-sm">
+                  <div className="w-12 h-12 bg-white/10 backdrop-blur-md border border-white/20 rounded-md flex items-center justify-center flex-shrink-0 group-hover:bg-white group-hover:text-[#7e22ce] transition-colors shadow-sm">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                   </div>
                   <div>
@@ -171,7 +176,7 @@ export default function Contact() {
 
                 {/* Address Card */}
                 <div className="flex items-start gap-5 group cursor-pointer">
-                  <div className="w-12 h-12 bg-white/10 backdrop-blur-md border border-white/20 rounded-md flex items-center justify-center flex-shrink-0 group-hover:bg-white group-hover:text-[#5a67d8] transition-colors shadow-sm">
+                  <div className="w-12 h-12 bg-white/10 backdrop-blur-md border border-white/20 rounded-md flex items-center justify-center flex-shrink-0 group-hover:bg-white group-hover:text-[#be185d] transition-colors shadow-sm">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                   </div>
                   <div>

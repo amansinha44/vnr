@@ -32,10 +32,12 @@ export default function Header() {
             {/* LOGO */}
             <div className="flex-shrink-0 cursor-pointer group hover:scale-105 transition-transform duration-300">
               <Link to="/" className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#5a67d8] to-[#8a2387] flex items-center justify-center shadow-sm">
+                {/* Updated Darker Vibrant Gradient */}
+                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#4338ca] via-[#7e22ce] to-[#be185d] flex items-center justify-center shadow-sm">
                   <span className="text-white font-black text-sm">V</span>
                 </div>
-                <span className="font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-[#5a67d8] to-[#8a2387] tracking-tight text-xl">
+                {/* Updated Darker Vibrant Gradient Text */}
+                <span className="font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-[#4338ca] via-[#7e22ce] to-[#be185d] tracking-tight text-xl">
                   VNR Media
                 </span>
               </Link>
@@ -51,7 +53,8 @@ export default function Header() {
                     to={item.path} 
                     className={`px-4 py-2 rounded-xl text-sm font-bold transition-all duration-300 ${
                       isActive 
-                        ? 'bg-white border border-white shadow-sm text-[#5a67d8]' 
+                        /* Updated active color to rich purple */
+                        ? 'bg-white border border-white shadow-sm text-[#7e22ce]' 
                         : 'text-slate-600 hover:bg-white/60 hover:text-slate-900 border border-transparent'
                     }`}
                   >
@@ -64,7 +67,8 @@ export default function Header() {
             {/* CTA BUTTON */}
             <div className="hidden lg:flex items-center">
               <Link to="/contact">
-                <button className="bg-gradient-to-r from-[#5a67d8] to-[#8a2387] text-white px-6 py-2.5 rounded-xl text-sm font-bold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+                {/* Updated Darker Vibrant Gradient Button */}
+                <button className="bg-gradient-to-r from-[#4338ca] via-[#7e22ce] to-[#be185d] text-white px-6 py-2.5 rounded-md text-sm font-bold shadow-[0_4px_15px_rgba(126,34,206,0.3)] hover:shadow-[0_6px_20px_rgba(126,34,206,0.4)] hover:-translate-y-0.5 transition-all duration-300">
                   Let's Talk
                 </button>
               </Link>
@@ -86,9 +90,7 @@ export default function Header() {
         </div>
       </div>
 
-      {/* MOBILE MENU OVERLAY */}
-
-{/* ================= MOBILE MENU (FLOATING LEFT, ROUNDED-MD) ================= */}
+      {/* ================= MOBILE MENU (FLOATING LEFT, ROUNDED-MD) ================= */}
       {isMobileMenuOpen && (
         <>
           {/* Dark Blurred Backdrop */}
@@ -102,7 +104,8 @@ export default function Header() {
             
             {/* 1. Menu Header */}
             <div className="flex justify-between items-center px-6 py-5 border-b border-slate-100/60">
-              <span className="text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#5a67d8] to-[#8a2387]">
+              {/* Updated Darker Vibrant Gradient Text */}
+              <span className="text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#4338ca] via-[#7e22ce] to-[#be185d]">
                 VNR Media
               </span>
               <button 
@@ -126,13 +129,15 @@ export default function Header() {
                     to={item.path} 
                     onClick={() => setIsMobileMenuOpen(false)}
                     style={{ animationDelay: `${index * 0.05}s` }}
-                    className={`group flex items-center justify-between px-4 py-3.5 rounded-md transition-all duration-300 opacity-0 animate-[menuItemSlideUp_0.4s_ease-out_forwards] ${isActive ? 'bg-[#5a67d8]/10 text-[#5a67d8]' : 'hover:bg-slate-50 text-slate-700'}`}
+                    /* Updated active highlight to rich purple */
+                    className={`group flex items-center justify-between px-4 py-3.5 rounded-md transition-all duration-300 opacity-0 animate-[menuItemSlideUp_0.4s_ease-out_forwards] ${isActive ? 'bg-[#7e22ce]/10 text-[#7e22ce]' : 'hover:bg-slate-50 text-slate-700'}`}
                   >
                     <span className={`text-lg transition-all ${isActive ? 'font-black' : 'font-bold'}`}>
                       {item.name}
                     </span>
                     {isActive && (
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#8a2387] shadow-[0_0_8px_#8a2387]"></span>
+                      /* Updated active dot to dark magenta */
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#be185d] shadow-[0_0_8px_#be185d]"></span>
                     )}
                   </Link>
                 );
@@ -140,8 +145,10 @@ export default function Header() {
 
               {/* ================= ATTRACTIVE DIVIDER LINE ================= */}
               <div className="w-full flex items-center justify-center relative pt-8 pb-4 opacity-70">
-                <div className="absolute w-full h-[1px] bg-gradient-to-r from-transparent via-[#5a67d8]/40 to-transparent"></div>
-                <div className="w-2 h-2 rotate-45 bg-white border border-[#8a2387]/40 shadow-[0_0_8px_rgba(138,35,135,0.2)] relative z-10"></div>
+                {/* Line color matched to purple */}
+                <div className="absolute w-full h-[1px] bg-gradient-to-r from-transparent via-[#7e22ce]/40 to-transparent"></div>
+                {/* Diamond matched to dark magenta */}
+                <div className="w-2 h-2 rotate-45 bg-white border border-[#be185d]/40 shadow-[0_0_8px_rgba(190,24,93,0.2)] relative z-10"></div>
               </div>
 
             </div>
@@ -167,11 +174,12 @@ export default function Header() {
 
               {/* CTA Button (Rounded-md) */}
               <Link 
-                 to="/contact" 
-                 onClick={() => setIsMobileMenuOpen(false)}
-                 className="flex items-center justify-center w-full py-3.5 rounded-md bg-gradient-to-r from-[#5a67d8] to-[#8a2387] text-white font-bold text-sm shadow-[0_8px_20px_rgba(90,103,216,0.25)] active:scale-95 transition-all"
+                to="/contact" 
+                onClick={() => setIsMobileMenuOpen(false)}
+                /* Updated Darker Vibrant Gradient */
+                className="flex items-center justify-center w-full py-3.5 rounded-md bg-gradient-to-r from-[#4338ca] via-[#7e22ce] to-[#be185d] text-white font-bold text-sm shadow-[0_8px_20px_rgba(126,34,206,0.25)] active:scale-95 transition-all"
               >
-                 Book a Strategy Call
+                Book a Strategy Call
               </Link>
             </div>
 
@@ -194,11 +202,6 @@ export default function Header() {
           `}} />
         </>
       )}
-
-
-
-
-
 
     </>
   );

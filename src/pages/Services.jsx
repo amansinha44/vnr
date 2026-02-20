@@ -145,7 +145,7 @@ export default function Services() {
   ];
 
   return (
-    <div className="relative w-full min-h-screen font-sans selection:bg-[#5a67d8]/30 selection:text-[#1d1d1f] pb-20">
+    <div className="relative w-full min-h-screen font-sans selection:bg-[#7e22ce]/30 selection:text-[#1d1d1f] pb-20">
       
       {/* ================= BACKGROUND GLOW ================= */}
       <div className="fixed inset-0 z-0 bg-[#f4f8fb] pointer-events-none overflow-hidden">
@@ -170,12 +170,13 @@ export default function Services() {
 
         {/* --- HEADER SECTION --- */}
         <section className="w-full max-w-[1200px] mx-auto px-4 md:px-8 text-center relative">
-          <span className="inline-block py-1.5 px-4 rounded-md bg-white/60 backdrop-blur-md border border-white text-[#5a67d8] text-[10px] font-black tracking-[0.3em] uppercase mb-6 shadow-sm">
+          <span className="inline-block py-1.5 px-4 rounded-md bg-white/60 backdrop-blur-md border border-white text-[#7e22ce] text-[10px] font-black tracking-[0.3em] uppercase mb-6 shadow-sm">
             Our Capabilities
           </span>
           <h1 className="text-5xl md:text-7xl font-black text-[#1a1a2e] leading-[1.1] tracking-tight mb-6">
             Designed to <br className="hidden md:block"/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5a67d8] to-[#8a2387]">Dominate.</span>
+            {/* CHANGED TEXT GRADIENT HERE */}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4338ca] via-[#7e22ce] to-[#be185d]">Dominate.</span>
           </h1>
           <p className="text-lg md:text-xl text-slate-600 font-medium max-w-2xl mx-auto leading-relaxed">
             We don't just offer services; we engineer precision-driven strategies to elevate your brand above the noise.
@@ -226,7 +227,7 @@ export default function Services() {
                       </h3>
                     </div>
                     
-                    <div className="pl-4 border-l-4 border-[#8a2387]/30 bg-white/30 py-2 rounded-r-md">
+                    <div className="pl-4 border-l-4 border-[#7e22ce]/30 bg-white/30 py-2 rounded-r-md">
                       <p className="text-base md:text-lg text-slate-700 font-medium leading-relaxed max-w-lg">
                         {service.content}
                       </p>
@@ -259,11 +260,13 @@ export default function Services() {
                   </div>
                 </div>
 
-                {/* THE SEPARATOR LINE */}
+                {/* ================= ATTRACTIVE & VISIBLE DIVIDER LINE ================= */}
                 {index !== servicesData.length - 1 && (
-                  <div className="w-full flex items-center justify-center relative opacity-50 hover:opacity-100 transition-opacity duration-500">
-                    <div className="absolute w-full h-[1px] bg-gradient-to-r from-transparent via-slate-400/50 to-transparent"></div>
-                    <div className="w-2.5 h-2.5 rotate-45 bg-white border border-slate-300 shadow-sm relative z-10"></div>
+                  <div className="w-full flex items-center justify-center relative opacity-100 py-8">
+                    {/* Darker line for better visibility */}
+                    <div className="absolute w-full h-[2px] bg-gradient-to-r from-transparent via-slate-300 to-transparent"></div>
+                    {/* Clear Diamond shape */}
+                    <div className="w-3 h-3 rotate-45 bg-white border-2 border-slate-300 shadow-sm relative z-10"></div>
                   </div>
                 )}
               </React.Fragment>
@@ -271,38 +274,38 @@ export default function Services() {
           })}
         </section>
 
-{/* --- SECTION: THE GRAND FINALE (VIBRANT ORANGE THEME) --- */}
-<section className="w-full max-w-[1200px] mx-auto px-4 md:px-8 mt-32 mb-16 relative">
-  <div className="relative w-full h-auto md:h-[140px] bg-[#ff5a00] rounded-md p-6 md:px-12 flex flex-col md:flex-row items-center justify-between overflow-hidden shadow-[0_15px_40px_rgba(255,90,0,0.3)] group">
-    
-    {/* 1. Subtle White Grid Background for Texture */}
-    <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.15)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.15)_1px,transparent_1px)] bg-[size:30px_30px] [mask-image:linear-gradient(to_right,#000_40%,transparent_100%)]"></div>
+        {/* --- SECTION: THE GRAND FINALE (VIBRANT ORANGE THEME) --- */}
+        <section className="w-full max-w-[1200px] mx-auto px-4 md:px-8 mt-32 mb-16 relative">
+          <div className="relative w-full h-auto md:h-[140px] bg-[#ff5a00] rounded-md p-6 md:px-12 flex flex-col md:flex-row items-center justify-between overflow-hidden shadow-[0_15px_40px_rgba(255,90,0,0.3)] group">
+            
+            {/* 1. Subtle White Grid Background for Texture */}
+            <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.15)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.15)_1px,transparent_1px)] bg-[size:30px_30px] [mask-image:linear-gradient(to_right,#000_40%,transparent_100%)]"></div>
 
-    {/* 2. Soft Bright Inner Glow (Adds depth to the solid orange) */}
-    <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[300px] md:w-[500px] h-[100px] bg-white/20 blur-[40px] rounded-md pointer-events-none group-hover:bg-white/30 transition-colors duration-500"></div>
+            {/* 2. Soft Bright Inner Glow (Adds depth to the solid orange) */}
+            <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[300px] md:w-[500px] h-[100px] bg-white/20 blur-[40px] rounded-md pointer-events-none group-hover:bg-white/30 transition-colors duration-500"></div>
 
-    {/* Left Side: Text Content */}
-    <div className="relative z-10 text-center md:text-left mb-6 md:mb-0 w-full md:w-auto flex flex-col justify-center">
-      <span className="block text-white/90 text-[10px] md:text-xs font-black tracking-[0.3em] uppercase drop-shadow-md mb-1">
-        Stop blending in.
-      </span>
-      <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tight drop-shadow-lg leading-none mb-2">
-        Start leading.
-      </h2>
-      <p className="text-white/90 text-sm md:text-base font-medium drop-shadow-sm">
-        Let's build a digital ecosystem that works for you.
-      </p>
-    </div>
-    
-    {/* Right Side: Deep Dark Premium Button */}
-    <div className="relative z-10 flex-shrink-0">
-      <button className="px-8 py-3.5 rounded-md bg-[#1a1a2e] border border-[#1a1a2e] text-white font-bold text-sm md:text-base tracking-wide hover:bg-black hover:border-black hover:shadow-[0_10px_30px_rgba(0,0,0,0.4)] hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap">
-        Book a Strategy Call
-      </button>
-    </div>
+            {/* Left Side: Text Content */}
+            <div className="relative z-10 text-center md:text-left mb-6 md:mb-0 w-full md:w-auto flex flex-col justify-center">
+              <span className="block text-white/90 text-[10px] md:text-xs font-black tracking-[0.3em] uppercase drop-shadow-md mb-1">
+                Stop blending in.
+              </span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tight drop-shadow-lg leading-none mb-2">
+                Start leading.
+              </h2>
+              <p className="text-white/90 text-sm md:text-base font-medium drop-shadow-sm">
+                Let's build a digital ecosystem that works for you.
+              </p>
+            </div>
+            
+            {/* Right Side: Deep Dark Premium Button */}
+            <div className="relative z-10 flex-shrink-0">
+              <button className="px-8 py-3.5 rounded-md bg-[#1a1a2e] border border-[#1a1a2e] text-white font-bold text-sm md:text-base tracking-wide hover:bg-black hover:border-black hover:shadow-[0_10px_30px_rgba(0,0,0,0.4)] hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap">
+                Book a Strategy Call
+              </button>
+            </div>
 
-  </div>
-</section>
+          </div>
+        </section>
 
       </div>
     </div>

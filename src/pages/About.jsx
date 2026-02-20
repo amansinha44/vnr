@@ -49,7 +49,8 @@ export default function About() {
                   
                   {/* Glass Quote Box */}
                   <div className="bg-white/80 backdrop-blur-md rounded-xl p-6 border border-white shadow-[0_4px_20px_rgba(0,0,0,0.03)] border-l-4 border-l-[#8a2387]">
-                    <p className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#5a67d8] to-[#8a2387]">
+                    {/* CHANGED TEXT GRADIENT HERE */}
+                    <p className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#4338ca] via-[#7e22ce] to-[#be185d]">
                       "Every business touches human life."
                     </p>
                   </div>
@@ -82,7 +83,7 @@ export default function About() {
                 </div>
               </div>
 
-              {/* Box 3: Industries Impact (Full Width Bottom) */}
+               {/* Box 3: Industries Impact (Full Width Bottom) */}
 <div className="xl:col-span-12 bg-white/60 backdrop-blur-lg rounded-xl p-6 md:p-10 border border-white shadow-sm mt-4">
   <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
     {[
@@ -94,8 +95,7 @@ export default function About() {
       { text: "Technology moves us", icon: "🚗", color: "text-blue-600", glow: "shadow-[0_0_20px_rgba(37,99,235,0.3)]" },
       { text: "Solar powers tomorrow", icon: "☀️", color: "text-orange-500", glow: "shadow-[0_0_20px_rgba(249,115,22,0.3)]" }
     ].map((item, idx) => (
-      <div key={idx} className="bg-white/80 rounded-2xl p-5 flex flex-col items-center justify-center text-center gap-4 border border-white shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:-translate-y-1 hover:shadow-md transition-all duration-300 group">
-        
+<div key={idx} className={`bg-white rounded-2xl p-5 flex flex-col items-center justify-center text-center gap-4 border border-slate-100 shadow-[0_8px_20px_rgba(0,0,0,0.06)] hover:-translate-y-2 transition-all duration-300 group ${item.boxHover}`}>        
         {/* === DARK TRANSLUCENT ICON WITH 1 SLOW SPINNING DOT === */}
         <div className="relative w-14 h-14 flex items-center justify-center">
           
@@ -110,13 +110,13 @@ export default function About() {
 
         </div>
 
-        <span className={`text-xs font-bold leading-tight ${item.color}`}>
-          {item.text}
-        </span>
-      </div>
-    ))}
-  </div>
-</div>
+                      <span className={`text-xs font-bold leading-tight ${item.color}`}>
+                        {item.text}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
 
             </div>
           </div>
@@ -131,7 +131,8 @@ export default function About() {
             </span>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#1a1a2e] leading-[1.1] tracking-tight mb-8">
               Because Marketing Should <br className="hidden md:block"/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5a67d8] to-[#8a2387]">Follow Life.</span>
+              {/* CHANGED TEXT GRADIENT HERE */}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4338ca] via-[#7e22ce] to-[#be185d]">Follow Life.</span>
             </h2>
             <p className="text-lg md:text-xl text-slate-600 font-medium">
               Look at life closely. Life moves. Needs evolve. <br className="hidden md:block"/>
@@ -221,7 +222,8 @@ export default function About() {
                     <span className="text-xl md:text-2xl font-black text-slate-800 bg-white/60 w-fit px-4 py-1.5 rounded-lg shadow-sm border border-white">They book hotels.</span>
                     <span className="text-xl md:text-2xl font-black text-slate-800 bg-white/60 w-fit px-4 py-1.5 rounded-lg shadow-sm border border-white">They buy homes.</span>
                     <span className="text-xl md:text-2xl font-black text-slate-800 bg-white/60 w-fit px-4 py-1.5 rounded-lg shadow-sm border border-white">Adopt new mobility.</span>
-                    <span className="text-2xl md:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#5a67d8] to-[#8a2387] pt-4 mt-2 block">
+                    {/* CHANGED TEXT GRADIENT HERE */}
+                    <span className="text-2xl md:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#4338ca] via-[#7e22ce] to-[#be185d] pt-4 mt-2 block">
                       They invest in sustainability.
                     </span>
                   </div>
@@ -232,38 +234,31 @@ export default function About() {
           </div>
         </section>
 
-        {/* --- SECTION 3: FULL WIDTH CLOSING LINE (GLASSMORPHIC) --- */}
         {/* --- SECTION 3: THE GRAND FINALE (COMPACT & DARK NEON) --- */}
-<section className="w-full max-w-[1200px] mx-auto px-4 md:px-8 mt-24 mb-16 relative">
-  
-  {/* Container with fixed/max height for compactness */}
-  <div className="relative w-full h-auto md:h-[140px] bg-[#0b101e] rounded-xl p-6 md:px-12 flex flex-col md:flex-row items-center justify-between overflow-hidden shadow-[0_15px_40px_rgba(0,242,254,0.1)] border border-white/5">
-    
-    {/* 1. Subtle Futuristic Grid Background */}
-    <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:30px_30px] [mask-image:linear-gradient(to_right,#000_30%,transparent_100%)]"></div>
+        <section className="w-full max-w-[1200px] mx-auto px-4 md:px-8 mt-24 mb-16 relative">
+          
+          <div className="relative w-full h-auto md:h-[140px] bg-[#0b101e] rounded-xl p-6 md:px-12 flex flex-col md:flex-row items-center justify-between overflow-hidden shadow-[0_15px_40px_rgba(0,242,254,0.1)] border border-white/5">
+            
+            <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:30px_30px] [mask-image:linear-gradient(to_right,#000_30%,transparent_100%)]"></div>
+            <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[300px] md:w-[500px] h-[100px] bg-[#00f2fe]/20 blur-[50px] rounded-xl pointer-events-none"></div>
 
-    {/* 2. Sleek Horizontal Blue Glow */}
-    <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[300px] md:w-[500px] h-[100px] bg-[#00f2fe]/20 blur-[50px] rounded-xl pointer-events-none"></div>
+            <div className="relative z-10 text-center md:text-left mb-6 md:mb-0 w-full md:w-auto">
+              <span className="block text-[#00f2fe] text-[10px] md:text-xs font-black tracking-[0.3em] uppercase drop-shadow-[0_0_8px_rgba(0,242,254,0.6)] mb-2">
+                The Endgame
+              </span>
+              <h2 className="text-2xl md:text-4xl font-black text-white tracking-tight">
+                Ready for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00f2fe] to-[#3b82f6] drop-shadow-[0_0_15px_rgba(0,242,254,0.4)]">Life-Cycle Brand Building?</span>
+              </h2>
+            </div>
+            
+            <div className="relative z-10 flex-shrink-0">
+              <button className="px-8 py-3.5 rounded-full bg-[#00f2fe]/10 border border-[#00f2fe]/40 text-[#00f2fe] font-bold text-sm md:text-base tracking-wide hover:bg-[#00f2fe] hover:text-[#0b101e] hover:shadow-[0_0_25px_rgba(0,242,254,0.6)] hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap">
+                Start Your Journey
+              </button>
+            </div>
 
-    {/* Left Side: Text Content */}
-    <div className="relative z-10 text-center md:text-left mb-6 md:mb-0 w-full md:w-auto">
-      <span className="block text-[#00f2fe] text-[10px] md:text-xs font-black tracking-[0.3em] uppercase drop-shadow-[0_0_8px_rgba(0,242,254,0.6)] mb-2">
-        The Endgame
-      </span>
-      <h2 className="text-2xl md:text-4xl font-black text-white tracking-tight">
-        Ready for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00f2fe] to-[#3b82f6] drop-shadow-[0_0_15px_rgba(0,242,254,0.4)]">Life-Cycle Brand Building?</span>
-      </h2>
-    </div>
-    
-    {/* Right Side: Free-Flowing Minimalist Button */}
-    <div className="relative z-10 flex-shrink-0">
-      <button className="px-8 py-3.5 rounded-full bg-[#00f2fe]/10 border border-[#00f2fe]/40 text-[#00f2fe] font-bold text-sm md:text-base tracking-wide hover:bg-[#00f2fe] hover:text-[#0b101e] hover:shadow-[0_0_25px_rgba(0,242,254,0.6)] hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap">
-        Start Your Journey
-      </button>
-    </div>
-
-  </div>
-</section>
+          </div>
+        </section>
 
       </div>
     </div>
