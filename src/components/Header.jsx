@@ -27,7 +27,7 @@ export default function Header() {
       <div className="fixed top-4 md:top-6 left-0 right-0 z-50 w-full">
         <div className="max-w-[1200px] mx-auto px-4 md:px-8">
           
-          <header className={`w-full bg-white/50 backdrop-blur-2xl border border-white shadow-[0_4px_20px_rgba(0,0,0,0.04)] transition-all duration-500 flex justify-between items-center px-4 lg:px-6 rounded-xl ${scrolled ? 'h-16' : 'h-20'}`}>
+          <header className={`w-full bg-white/50 backdrop-blur-2xl border border-white shadow-[0_4px_20px_rgba(0,0,0,0.04)] transition-all duration-500 flex justify-between items-center px-4 lg:px-6 rounded-md ${scrolled ? 'h-16' : 'h-20'}`}>
             
             {/* LOGO */}
             <div className="flex-shrink-0 cursor-pointer group hover:scale-105 transition-transform duration-300">
